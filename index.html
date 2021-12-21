@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- ========== CALCULATOR ========== -->
+    <div class="calc__wrapper">
+      <h1 class="calc__title">Калькулятор&#128425;</h1>
+      <form action="#" class="calc__form">
+        <label>
+          <input
+            class="calc__value-one"
+            type="number"
+            placeholder="Введите число"
+            required
+          />
+        </label>
+        <select class="calc__select">
+          <option disabled selected>Выберите оператор</option>
+          <option value="add">+</option>
+          <option value="subtract">-</option>
+          <option value="multiply">*</option>
+          <option value="divide">/</option>
+        </select>
+        <label>
+          <input
+            class="calc__value-two"
+            type="number"
+            placeholder="Введите число"
+            required
+          />
+        </label>
+        <button type="button" class="calc__equals" onclick="calc()">=</button>
+        <p>Результат:</p>
+        <output class="calc__result"></output>
+        <button type="reset" class="calc__reset" onclick="res()">
+          Сбросить
+        </button>
+      </form>
+    </div>
+    <!-- ========== SCRIPT ========== -->
+    <script src="./index.js"></script>
+  </body>
+</html>
